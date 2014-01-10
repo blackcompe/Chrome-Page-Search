@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name": "Advanced Page Search",
+	"description": "A Chrome extension for searching and highlighting page text using advanced search operators.",
+	"version": "1.0",
+	"browser_action": {
+		"default_popup": "html/popup.html"
+	},
+	"icons": {"16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png"
+	}
+}
