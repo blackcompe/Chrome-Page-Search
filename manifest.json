@@ -4,10 +4,26 @@
 	"description": "A Chrome extension for searching and highlighting page text using advanced search operators.",
 	"version": "1.0",
 	"browser_action": {
-		"default_popup": "html/popup.html"
+		"default_popup": "html/search.html",
+		"default_icon": "img/icon48.png"
 	},
 	"icons": {"16": "img/icon16.png",
 		"48": "img/icon48.png",
 		"128": "img/icon128.png"
-	}
+	},
+	"background": {
+		"scripts": ["js/jquery-2.0.3.min.js", "js/search.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*"],
+			"js": ["js/jquery-2.0.3.min.js", "js/jquery.scrollTo.min.js", "js/search_content.js"],
+			"css": ["css/search.css"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [
+		"http://*/*"
+	],
+	"options_page": "html/options.html"
 }

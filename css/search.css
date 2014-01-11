@@ -1,0 +1,10 @@
+
+.search {
+    width: 325px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search input[type="text"] {
+	width: 250px;
+}
