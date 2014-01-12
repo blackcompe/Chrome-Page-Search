@@ -1,0 +1,16 @@
+
+.search {
+    width: 325px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search input[type="text"] {
+	width: 250px;
+}
+
+.cps_hl {
+	color: black;
+	font-weight: bolder;
+	background-color: yellow
+}
